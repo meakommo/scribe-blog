@@ -2,14 +2,14 @@ const path = require('path')
 const express = require('express')
 
 // Route files go here
-// const ROUTE_NAME = require('./ROUTE_PATH')
+const usersRoutes = require('./routes/users')
 
 const server = express()
 // middleware
 server.use(express.static(path.join(__dirname, './public')))
 
 // routes
-// server.use('/api/v1/URL_TO_CALL', ROUTE BEING CALLED)
+server.use('/api/v1/users', usersRoutes)
 
 // wildcard route
 server.get('*', function (req, res) {
