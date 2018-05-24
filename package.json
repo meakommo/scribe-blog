@@ -1,7 +1,7 @@
 {
   "name": "scribe-blog",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server/index.js",
   "repository": "https://github.com/meakommo/scribe-blog",
   "author": "meakommo <meako98@gmail.com>",
   "license": "MIT",
