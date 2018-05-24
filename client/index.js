@@ -22,7 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
   render(
     <Router>
       <Provider store={store}>
-        <App />
+        <div className="container-fluid">
+          <App />
+        </div>
       </Provider>
     </Router>,
     document.getElementById('app')
