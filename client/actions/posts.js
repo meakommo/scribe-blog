@@ -19,9 +19,9 @@ export function handleAllPosts () {
   }
 }
 
-export function allPosts (posts) {
+export function allPosts (allPosts) {
   return {
     type: ALL_POSTS,
-    posts
+    allPosts
   }
 }
