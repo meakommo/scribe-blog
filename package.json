@@ -6,7 +6,7 @@
   "author": "meakommo <meako98@gmail.com>",
   "license": "MIT",
   "engines": {
-    "node": "=9.11.0"
+    "node": ">=9.11.0"
   },
   "scripts": {
     "knex": "knex --knexfile ./server/db/knexfile.js",
