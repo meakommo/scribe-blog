@@ -23,12 +23,18 @@ class NavBar extends React.Component {
               <a className="navbar-item">
                           Portfolio
               </a>
+              {/* 
+              format for additional nav tags
               <a className="navbar-item">
                           Archives
               </a>
+              
+              */}
               <a className="navbar-item">
                           About
               </a>
+              {/* 
+              Drop down menu format **
               <div className="navbar-item has-dropdown is-hoverable">
                 <a className="navbar-link">
                               Account
@@ -48,7 +54,8 @@ class NavBar extends React.Component {
                               Logout
                   </div>
                 </div>
-              </div>
+              </div> 
+              */}
             </div>
           </div>
         </div>
