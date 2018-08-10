@@ -1,11 +1,20 @@
 import React from 'react'
-import {BrowserRouter as Router} from 'react-router-dom'
+// import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+
+import NavBar from './NavBar'
+import BackgroundImage from './BackgroundImage'
+import ArticleList from './ArticleList'
 
 class App extends React.Component {
   render () {
     return (
-      <Router>
-      </Router>
+      <div>
+        {/* <Router> */}
+        <NavBar />
+        <BackgroundImage />
+        <ArticleList />
+        {/* </Router> */}
+      </div>
     )
   }
 }
