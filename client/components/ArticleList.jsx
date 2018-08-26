@@ -1,6 +1,12 @@
 import React from 'react'
+import {connect} from 'react-redux'
+import {handleAllPosts} from '../actions/posts'
 
 class ArticleList extends React.Component {
+  componentDidMount () {
+    this.props.dispatch(handleAllPosts())
+  }
+
   render () {
     return (
       <div className="container">
@@ -12,14 +18,14 @@ class ArticleList extends React.Component {
               <div className="card-content">
                 <div className="media">
                   <div className="media-content has-text-centered">
-                  {/* Article title */}
+                    {/* Article title */}
                     <p className="title article-title">Article title</p>
                     {/* *** */}
                     <div className="tags has-addons level-item">
-                    {/* handle bullet and date bullet */}
+                      {/* handle bullet and date bullet */}
                       <span className="tag is-rounded is-info">@Twiiter handle</span>
                       <span className="tag is-rounded">Date bullet</span>
-                    {/* *** */}
+                      {/* *** */}
                     </div>
                   </div>
                 </div>
@@ -29,7 +35,7 @@ class ArticleList extends React.Component {
                 </div>
               </div>
             </div>
-            {/* <!-- END ARTICLE --> */}         
+            {/* <!-- END ARTICLE --> */}
           </div>
         </section>
         {/* END ARTICLE FEED */}
@@ -37,5 +43,10 @@ class ArticleList extends React.Component {
     )
   }
 }
+const mapStateToProps = state => {
+  return {
+    posts: state.allPosts
+  }
+}
 
-export default ArticleList
+export default connect(mapStateToProps)(ArticleList)
