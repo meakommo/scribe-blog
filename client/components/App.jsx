@@ -4,6 +4,7 @@ import React from 'react'
 import NavBar from './NavBar'
 import BackgroundImage from './BackgroundImage'
 import Landing from './Landing'
+import Footer from './Footer'
 
 class App extends React.Component {
   render () {
@@ -13,6 +14,7 @@ class App extends React.Component {
         <NavBar />
         <BackgroundImage />
         <Landing />
+        <Footer />
         {/* </Router> */}
       </div>
     )

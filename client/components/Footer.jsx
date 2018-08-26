@@ -1,6 +1,6 @@
 import React from 'react'
 
-class PromoBlock extends React.Component {
+class Footer extends React.Component {
   render () {
     return (
       <section className="hero is-info is-bold is-small promo-block">
@@ -18,4 +18,4 @@ class PromoBlock extends React.Component {
   }
 }
 
-export default PromoBlock
+export default Footer

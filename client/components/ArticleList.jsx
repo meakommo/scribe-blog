@@ -15,7 +15,7 @@ const ArticleList = ({id, title, date, body, author}) => (
           {/* *** */}
           <div className="tags has-addons level-item">
             {/* handle bullet and date bullet */}
-            <span className="tag is-rounded is-info">@{author}</span>
+            <span className="tag is-rounded is-info">{author}</span>
             <span className="tag is-rounded">{timeStamp(date)}</span>
             {/* *** */}
           </div>
@@ -24,6 +24,7 @@ const ArticleList = ({id, title, date, body, author}) => (
       <div className="content article-body">
         <p>{body}</p>
       </div>
+      <a className="button is-info">Read More</a>
     </div>
   </div>
 )

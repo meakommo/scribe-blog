@@ -17,8 +17,8 @@ class Landing extends React.Component {
     return (
       <div className="container">
         {/* <!-- START ARTICLE FEED --> */}
-        <section className="articles">
-          <div className="column is-8 is-offset-2">
+        <section className="articles padding-top padding-bottom columns">
+          <div className="column is-7">
             {/* <!-- START ARTICLE --> */}
             <div className='list'>
               {posts.map(posts =>
@@ -34,6 +34,13 @@ class Landing extends React.Component {
               }
             </div>
             {/* <!-- END ARTICLE --> */}
+          </div>
+          <div className="column is-5">
+            <div className="card article">
+              <div className="card-content">
+                Test words
+              </div>
+            </div>
           </div>
         </section>
         {/* END ARTICLE FEED */}
