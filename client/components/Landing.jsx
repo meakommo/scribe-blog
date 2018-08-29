@@ -37,10 +37,17 @@ class Landing extends React.Component {
           {/* <!-- END ARTICLE --> */}
           {/* <!-- START SIDE BAR --> */}
           <div className="column is-5">
-            <div className="card article">
-              <div className="card-content">
-                Test words
-              </div>
+            <div className="box">
+              <article className="media">
+                <div className="media-content">
+                  <div className="content">
+                    <p>
+                      <strong>Search</strong>
+                      <input className="input" type="text" placeholder="Search for..."/>
+                    </p>
+                  </div>
+                </div>
+              </article>
             </div>
           </div>
           {/* <!-- END SIDE BAR --> */}
