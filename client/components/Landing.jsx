@@ -18,8 +18,8 @@ class Landing extends React.Component {
       <div className="container">
         {/* <!-- START ARTICLE FEED --> */}
         <section className="articles padding-top padding-bottom columns">
+          {/* <!-- START ARTICLE --> */}
           <div className="column is-7">
-            {/* <!-- START ARTICLE --> */}
             <div className='list'>
               {posts.map(posts =>
                 <ArticleList
@@ -33,8 +33,9 @@ class Landing extends React.Component {
               )
               }
             </div>
-            {/* <!-- END ARTICLE --> */}
           </div>
+          {/* <!-- END ARTICLE --> */}
+          {/* <!-- START SIDE BAR --> */}
           <div className="column is-5">
             <div className="card article">
               <div className="card-content">
@@ -42,6 +43,7 @@ class Landing extends React.Component {
               </div>
             </div>
           </div>
+          {/* <!-- END SIDE BAR --> */}
         </section>
         {/* END ARTICLE FEED */}
       </div>
