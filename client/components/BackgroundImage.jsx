@@ -3,10 +3,10 @@ import React from 'react'
 class BackgroundImage extends React.Component {
   render () {
     return (
-      <section className="hero is-info is-medium is-bold">
+      <section className="hero is-info is-bold is-small promo-block">
         <div className="hero-body">
-          <div className="container has-text-centered">
-            <h1 className="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br/>sed eiusmod tempor incididunt ut labore et dolore magna aliqua</h1>
+          <div className="container">
+
           </div>
         </div>
       </section>

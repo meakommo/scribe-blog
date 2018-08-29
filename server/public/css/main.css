@@ -4,3 +4,10 @@
   font-family: 'Pacifico', cursive;
   color: #ad1d1d;
 }
+.padding-top {
+  padding-top: 1em
+}
+
+.padding-bottom {
+  padding-bottom: 1em
+}

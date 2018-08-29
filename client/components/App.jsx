@@ -3,7 +3,8 @@ import React from 'react'
 
 import NavBar from './NavBar'
 import BackgroundImage from './BackgroundImage'
-import ArticleList from './ArticleList'
+import Landing from './Landing'
+import Footer from './Footer'
 
 class App extends React.Component {
   render () {
@@ -12,7 +13,8 @@ class App extends React.Component {
         {/* <Router> */}
         <NavBar />
         <BackgroundImage />
-        <ArticleList />
+        <Landing />
+        <Footer />
         {/* </Router> */}
       </div>
     )

@@ -9,8 +9,8 @@ export const ALL_POSTS = 'ALL_POSTS'
 export function handleAllPosts () {
   return dispatch => {
     return getAllPosts()
-      .then(Posts => {
-        dispatch(allPosts(Posts))
+      .then(posts => {
+        dispatch(allPosts(posts))
       })
       .catch(err => {
         dispatch(errorHandle(err.message))
@@ -19,9 +19,9 @@ export function handleAllPosts () {
   }
 }
 
-export function allPosts (posts) {
+export function allPosts (allPosts) {
   return {
     type: ALL_POSTS,
-    posts
+    allPosts
   }
 }
